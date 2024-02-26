@@ -1,0 +1,76 @@
+.accordian-body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Adjust the margin as needed */
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    margin: 10px; /* Adjust the margin as needed */
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Accordion Styles */
+.accordion input {
+    display: none;
+}
+
+.accordion label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion label:hover {
+    background-color: #ddd;
+}
+
+.accordion input:checked + label {
+    background-color: #ddd;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.accordion input:checked + label + .accordion-content {
+    max-height: 500px; /* Adjust the max-height as needed */
+}
+

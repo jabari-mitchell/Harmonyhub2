@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jabari Mitchell">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team</title>
+
+    <!-- css Section -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <i class=<i class="fa-solid fa-people-group"></i><i class="fa-solid fa-people-group"></i></i> Harmony Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html"><i class="fa-solid fa-bell-concierge"></i>Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html"><i class="fa-solid fa-users-line"></i> Team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html"><i class="fa-solid fa-blog"></i> Blog</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<div id="team-grid">
+    <div class="team-member" onclick="showModal('Muiz Bolarinwa', 'Lead Software Engineer', './Images/muiz.jpg',
+    'As our Lead Software Engineer, Muiz oversees the technical aspects of our web development projects. ' +
+     'With a wealth of experience in software architecture and coding practices, ' +
+      'He ensures that our digital solutions are not only functional but also scalable and future-proof.')">
+        <img src="./Images/muiz.jpg" alt="Muiz Bolarinwa">
+        <h3>Muiz Bolarinwa</h3>
+        <p>Lead Software Engineer</p>
+        <br><p>Founder</p>
+    </div>
+
+    <div class="team-member" onclick="showModal('Jabari Mitchell', 'Front-End Developer', './Images/jabari.jpg',
+    'Jabari is our Front-End Developer, ' +
+     'responsible for crafting the visual elements that users interact with on our website. ' +
+      'From designing responsive layouts to ensuring a seamless user experience, ' +
+       'Jabari combines creativity and technical skills to bring our web interface to life.')">
+        <img src="./Images/jabari.jpg" alt="Jabari Mitchell">
+        <h3>Jabari Mitchell</h3>
+        <p>Front-End Developer</p>
+        <br><p>Co-Founder</p>
+    </div>
+
+    <div class="team-member" onclick="showModal('Mia John', 'Back-End Developer', './Images/ella.jpg',
+    'As our Back-End Developer, Mia focuses on the server-side of our web applications. ' +
+     'She works behind the scenes to optimize performance, manage databases, and implement robust server-side logic. ' +
+      'Mia\'s attention to detail ensures the functionality of our digital services.')">
+        <img src="./Images/ella.jpg" alt="Mia John">
+        <h3>Mia John</h3>
+        <p>Back-End Developer</p>
+    </div>
+
+    <div class="team-member" onclick="showModal('Ryan Reynolds', 'Full Stack Developer', './Images/ryan.jpg',
+    'Ryan is our versatile Full Stack Developer, proficient in both front-end and back-end technologies. ' +
+     'His role involves integrating different layers of a web application, ' +
+      'ensuring a cohesive and comprehensive digital experience for our users.')">
+        <img src="./Images/ryan.jpg" alt="Peter Parker">
+        <h3>Ryan Reynolds</h3>
+        <p>Full Stack Developer</p>
+    </div>
+
+
+
+
+</div>
+
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-content"></div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white mt-5 fixed-bottom">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="privacypolicy.html"><i class="fa-solid fa-shield-halved"></i> Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./termsofservice.html"><i class="fa-solid fa-envelope-open-text"></i> Terms of Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fa-solid fa-inbox"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</footer>
+<!-- Scripting Section -->
+<script src="Script/main.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+</body>
+</html>
